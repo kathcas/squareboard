@@ -1,0 +1,194 @@
+<style>
+  table{
+    border-collapse:collapse;
+    width: 100%;
+  }
+  td {
+    text-align: center;
+    border: 1px solid #331452;
+    padding: 16px;
+  }
+  th {
+    border: 1px solid #df9fbf;
+    ###padding: 8px;
+  }
+  .more_info {
+    border-bottom: 1px dotted #000;
+  position: relative;
+    cursor: pointer;
+}
+
+.more_info .popup {
+    position: absolute;
+    top: 15px; /*must overlap parent element otherwise pop-up doesn't stay open when rolloing over '*/
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    left: 0;
+    max-width: 240px;
+    min-width: 180px;
+    z-index: 100;
+    display: none;
+}
+ 
+</style>
+
+
+
+<table style="border-collapse:collapse; font-size:150%; background-color: white">
+  <colgroup> 
+    <col style="background-color: #df9fbf;">
+    <col span="10">
+  </colgroup>
+  <tr style="background-color: #df9fbf; ">
+    
+    <th style="color: #df9fbf"> ___ </th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+  </tr>
+  <!--- an occupied space should have the background
+  color changed to #a670db, and the value in the popup div
+  should be changed to the owner's name.
+  
+  thank you to bgx on stackoverflow for the code-->
+  <tr>
+    <th>A</th>
+    <td id="A1" style="background-color: white;" class="more_info"><div class="popup"> jane doe </div></td>
+    <td id="A2" style="background-color: white;" class="more_info"></td>
+    <td id="A3" style="background-color: white;" class="more_info"></td>
+    <td id="A4" style="background-color: white;" class="more_info"></td>
+    <td id="A5" style="background-color: white;" class="more_info"></td>
+    <td id="A6" style="background-color: white;" class="more_info"></td>
+    <td id="A7" style="background-color: white;" class="more_info"></td>
+    <td id="A8" style="background-color: white;" class="more_info"></td>
+    <td id="A9" style="background-color: white;" class="more_info"></td>
+    <td id="A10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>B</th>
+    <td id="B1" style="background-color: white;" class="more_info"></td>
+    <td id="B2" style="background-color: white;" class="more_info"></td>
+    <td id="B3" style="background-color: white;" class="more_info"></td>
+    <td id="B4" style="background-color: white;" class="more_info"></td>
+    <td id="B5" style="background-color: white;" class="more_info"></td>
+    <td id="B6" style="background-color: white;" class="more_info"></td>
+    <td id="B7" style="background-color: white;" class="more_info"></td>
+    <td id="B8" style="background-color: white;" class="more_info"></td>
+    <td id="B9" style="background-color: white;" class="more_info"></td>
+    <td id="B10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>C</th>
+    <td id="C1" style="background-color: white;" class="more_info"></td>
+    <td id="C2" style="background-color: white;" class="more_info"></td>
+    <td id="C3" style="background-color: white;" class="more_info"></td>
+    <td id="C4" style="background-color: white;" class="more_info"></td>
+    <td id="C5" style="background-color: white;" class="more_info"></td>
+    <td id="C6" style="background-color: white;" class="more_info"></td>
+    <td id="C7" style="background-color: white;" class="more_info"></td>
+    <td id="C8" style="background-color: white;" class="more_info"></td>
+    <td id="C9" style="background-color: white;" class="more_info"></td>
+    <td id="C10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>D</th>
+    <td id="D1" style="background-color: white;" class="more_info"></td>
+    <td id="D2" style="background-color: white;" class="more_info"></td>
+    <td id="D3" style="background-color: white;" class="more_info"></td>
+    <td id="D4" style="background-color: white;" class="more_info"></td>
+    <td id="D5" style="background-color: white;" class="more_info"></td>
+    <td id="D6" style="background-color: white;" class="more_info"></td>
+    <td id="D7" style="background-color: white;" class="more_info"></td>
+    <td id="D8" style="background-color: white;" class="more_info"></td>
+    <td id="D9" style="background-color: white;" class="more_info"></td>
+    <td id="D10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+   <th>E</th>
+    <td id="E1" style="background-color: white;" class="more_info"></td>
+    <td id="E2" style="background-color: white;" class="more_info"></td>
+    <td id="E3" style="background-color: white;" class="more_info"></td>
+    <td id="E4" style="background-color: white;" class="more_info"></td>
+    <td id="E5" style="background-color: white;" class="more_info"></td>
+    <td id="E6" style="background-color: white;" class="more_info"></td>
+    <td id="E7" style="background-color: white;" class="more_info"></td>
+    <td id="E8" style="background-color: white;" class="more_info"></td>
+    <td id="E9" style="background-color: white;" class="more_info"></td>
+    <td id="E10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+   <th>F</th>
+    <td id="F1" style="background-color: white;" class="more_info"></td>
+    <td id="F2" style="background-color: white;" class="more_info"></td>
+    <td id="F3" style="background-color: white;" class="more_info"></td>
+    <td id="F4" style="background-color: white;" class="more_info"></td>
+    <td id="F5" style="background-color: white;" class="more_info"></td>
+    <td id="F6" style="background-color: white;" class="more_info"></td>
+    <td id="F7" style="background-color: white;" class="more_info"></td>
+    <td id="F8" style="background-color: white;" class="more_info"></td>
+    <td id="F9" style="background-color: white;" class="more_info"></td>
+    <td id="10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>G</th>
+    <td id="G1" style="background-color: white;" class="more_info"></td>
+    <td id="G2" style="background-color: white;" class="more_info"></td>
+    <td id="G3" style="background-color: white;" class="more_info"></td>
+    <td id="G4" style="background-color: white;" class="more_info"></td>
+    <td id="G5" style="background-color: white;" class="more_info"></td>
+    <td id="G6" style="background-color: white;" class="more_info"></td>
+    <td id="G7" style="background-color: white;" class="more_info"></td>
+    <td id="G8" style="background-color: white;" class="more_info"></td>
+    <td id="G9" style="background-color: white;" class="more_info"></td>
+    <td id="G10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>H</th>
+    <td id="H1" style="background-color: white;" class="more_info"></td>
+    <td id="H2" style="background-color: white;" class="more_info"></td>
+    <td id="H3" style="background-color: white;" class="more_info"></td>
+    <td id="H4" style="background-color: white;" class="more_info"></td>
+    <td id="H5" style="background-color: white;" class="more_info"></td>
+    <td id="H6" style="background-color: white;" class="more_info"></td>
+    <td id="H7" style="background-color: white;" class="more_info"></td>
+    <td id="H8" style="background-color: white;" class="more_info"></td>
+    <td id="H9" style="background-color: white;" class="more_info"></td>
+    <td id="H10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+   <th> I</th>
+    <td id="I1" style="background-color: white;" class="more_info"></td>
+    <td id="I2" style="background-color: white;" class="more_info"></td>
+    <td id="I3" style="background-color: white;" class="more_info"></td>
+    <td id="I4" style="background-color: white;" class="more_info"></td>
+    <td id="I5" style="background-color: white;" class="more_info"></td>
+    <td id="I6" style="background-color: white;" class="more_info"></td>
+    <td id="I7" style="background-color: white;" class="more_info"></td>
+    <td id="I8" style="background-color: white;" class="more_info"></td>
+    <td id="I9" style="background-color: white;" class="more_info"></td>
+    <td id="I10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  <tr>
+    <th>J</th>
+    <td id="J1" style="background-color: white;" class="more_info"></td>
+    <td id="J2" style="background-color: white;" class="more_info"></td>
+    <td id="J3" style="background-color: white;" class="more_info"></td>
+    <td id="J4" style="background-color: white;" class="more_info"></td>
+    <td id="J5" style="background-color: white;" class="more_info"></td>
+    <td id="J6" style="background-color: white;" class="more_info"></td>
+    <td id="J7" style="background-color: white;" class="more_info"></td>
+    <td id="J8" style="background-color: white;" class="more_info"></td>
+    <td id="J9" style="background-color: white;" class="more_info"></td>
+    <td id="J10" style="background-color: white;" class="more_info"></td>
+  </tr>
+  
+  
+</table>
